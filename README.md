@@ -17,7 +17,7 @@ You'll be prompted for `ENGRAM_API_KEY`. Get one at [lumetra.io](https://lumetra
 - `/engram-remember <fact>` — store a fact in memory.
 - `/engram-recall <query>` — search memory in natural language.
 
-The MCP server also exposes `store_memory`, `query_memory`, `list_buckets`, `delete_memory`, and `clear_memories` to Claude directly — the slash commands are just shortcuts.
+The MCP server also exposes `store_memory`, `query_memory`, `list_memories`, `list_buckets`, `delete_memory`, and `clear_memories` to Claude directly — the slash commands are just shortcuts.
 
 ## BYOK reminder
 
@@ -25,4 +25,4 @@ Engram is bring-your-own-key. Configure an OpenAI / Anthropic / Groq / Together 
 
 ## License
 
-MIT — see [`plugins/engram/.claude-plugin/plugin.json`](plugins/engram/.claude-plugin/plugin.json).
+MIT — see [LICENSE](./LICENSE).
