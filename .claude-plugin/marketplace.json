@@ -1,0 +1,19 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "lumetra",
+  "description": "Engram durable memory for Claude Code — persistent, explainable memory via MCP.",
+  "owner": {
+    "name": "Lumetra",
+    "email": "hi@lumetra.io"
+  },
+  "plugins": [
+    {
+      "name": "engram",
+      "source": "./plugins/engram",
+      "description": "Persistent memory for Claude Code via the Engram MCP server. BYOK; no per-token charges from us.",
+      "version": "0.1.0",
+      "homepage": "https://lumetra.io",
+      "keywords": ["memory", "mcp", "engram", "lumetra", "context"]
+    }
+  ]
+}
