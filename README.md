@@ -5,7 +5,7 @@ Persistent, explainable memory for Claude Code via the [Engram](https://lumetra.
 ## Install
 
 ```
-/plugin marketplace add lumetra-io/engram-plugin
+/plugin marketplace add lumetra-io/engram-claude-plugin
 /plugin install engram@lumetra
 ```
 
