@@ -1,7 +1,7 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin.json",
   "name": "engram",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Persistent, explainable memory for Claude Code via the Engram MCP server. BYOK end-to-end — inference is billed by your LLM provider, not us.",
   "author": {
     "name": "Lumetra",
@@ -12,7 +12,15 @@
   "repository": "https://github.com/lumetra-io/engram-claude-plugin",
   "license": "MIT",
   "keywords": ["memory", "mcp", "engram", "lumetra", "context"],
-  "mcpServers": "./.mcp.json",
+  "mcpServers": {
+    "engram": {
+      "command": "sh",
+      "args": ["-c", "npx -y mcp-remote 'https://mcp.lumetra.io/mcp/sse' --transport sse-only --header \"Authorization:Bearer $ENGRAM_API_KEY\""],
+      "env": {
+        "ENGRAM_API_KEY": "${ENGRAM_API_KEY}"
+      }
+    }
+  },
   "userConfig": {
     "ENGRAM_API_KEY": {
       "type": "string",
