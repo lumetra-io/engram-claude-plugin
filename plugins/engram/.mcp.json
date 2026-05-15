@@ -1,0 +1,9 @@
+{
+  "engram": {
+    "type": "sse",
+    "url": "https://mcp.lumetra.io/mcp/sse",
+    "headers": {
+      "Authorization": "Bearer ${ENGRAM_API_KEY}"
+    }
+  }
+}
