@@ -1,9 +1,13 @@
 {
   "$schema": "https://code.claude.com/schemas/plugin.json",
   "name": "engram",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Persistent, explainable memory for Claude Code via the Engram MCP server. BYOK end-to-end — inference is billed by your LLM provider, not us.",
-  "author": "Lumetra <hi@lumetra.io>",
+  "author": {
+    "name": "Lumetra",
+    "email": "hi@lumetra.io",
+    "url": "https://lumetra.io"
+  },
   "homepage": "https://lumetra.io",
   "repository": "https://github.com/lumetra-io/engram-claude-plugin",
   "license": "MIT",
@@ -25,9 +29,10 @@
   },
   "userConfig": {
     "ENGRAM_API_KEY": {
-      "description": "Your Engram API key from https://lumetra.io (looks like eng_live_...). Stored in Claude Code's secret store.",
       "type": "string",
-      "secret": true,
+      "title": "Engram API key",
+      "description": "Your Engram API key from https://lumetra.io (looks like eng_live_...). Stored in Claude Code's secret store.",
+      "sensitive": true,
       "required": true
     }
   },
