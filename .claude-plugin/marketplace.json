@@ -11,7 +11,7 @@
       "name": "engram",
       "source": "./plugins/engram",
       "description": "Persistent memory for Claude Code via the Engram MCP server. BYOK; no per-token charges from us.",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "homepage": "https://lumetra.io",
       "keywords": ["memory", "mcp", "engram", "lumetra", "context"]
     }
