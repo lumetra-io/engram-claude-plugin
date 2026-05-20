@@ -9,7 +9,11 @@ Persistent, explainable memory for Claude Code via the [Engram](https://lumetra.
 /plugin install engram@lumetra
 ```
 
-You'll be prompted for `ENGRAM_API_KEY`. Get one at [lumetra.io](https://lumetra.io) — free tier, no card.
+You'll be prompted for `ENGRAM_API_KEY`. Get one at [lumetra.io](https://lumetra.io) — free tier, no card. The key is wired into the MCP server config via Claude Code's `user_config` mechanism (specifically `${user_config.ENGRAM_API_KEY}`) and stored in Claude Code's secret store.
+
+## Requirements
+
+The plugin shells out to `npx -y mcp-remote` as a stdio→SSE bridge to Engram's hosted MCP endpoint (`https://mcp.lumetra.io/mcp/sse`). You need `npx` available on `PATH` (Node.js 18+). No global install needed — `npx` fetches `mcp-remote` on first launch.
 
 ## What you get
 
